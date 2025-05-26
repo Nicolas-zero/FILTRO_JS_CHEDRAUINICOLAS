@@ -1,39 +1,49 @@
-<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CociCampus</title>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dosis:wght@200..800&family=Michroma&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles/index.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meal Finder</title>
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav>
+      <form class="input-container">
+        <input type="text" class="input" placeholder="Search ..." />
+        <i class="fa-solid fa-magnifying-glass magnifier"></i>
+      </form>
 
-    <header class="header-layout">
-        <input
-          name="q"
-          id="q"
-          data-js-selector="q"
-          autocomplete="off"
-          class="input text search"
-          placeholder="¿Qué estás buscando?"
-        />
-        <button id="boton">Buscar</button>
-      </header>
+      <ul>
+        <li>Breakfast</li>
+        <li>Launch</li>
+        <li>Dinner</li>
+      </ul>
+    </nav>
 
-<div class="menu">
-    <h1>Bienvenidos</h1>
-    <p>disfruta de un menu variado</p>
-</div>
+    <main>
+      <div class="container">
+        <div class="img"></div>
 
-<main class="main-content">
-    <!-- Vista de resultados -->
-    <section id="results" class="section-container">
-      <h2>Resultados</h2>
-      <div id="menu-container" class="menu-grid"></div>
+        <div class="content-container">
+          <h1 class="title">Food Name</h1>
+          <p class="info">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde
+            nostrum consequatur, nulla explicabo vero nesciunt architecto
+            officiis eius ullam alias.
+          </p>
+          <button class="main-btn">$20 - Order Now</button>
+        </div>
+      </div>
+    </main>
 
-      
-    
-</body>
-<script src="./js/app.js"></script>
+    <section class="ingredients"></section>
+
+    <script src="./js/app.js"></script>
+  </body>
 </html>
